@@ -5,6 +5,7 @@ import moment from 'moment';
 const filtersReducerDefaultState = {
     text: '',
     sortBy: 'date',
+    //cant use them as numbers, need moment so that it works with react dates picker
     startDate: moment().startOf('month'),
     endDate: moment().endOf('month')
   };
