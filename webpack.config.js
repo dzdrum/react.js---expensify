@@ -3,6 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
   const isProduction = env==='production';
+  //call the extracted css file to be styles.css
   const CSSExtract = new ExtractTextPlugin('styles.css');
 
   console.log('env', env)
@@ -20,6 +21,7 @@ module.exports = (env) => {
             exclude: /node_modules/
         }, {
             test: /\.s?css$/,
+            //pulls out all css files in order to separate from javascript
             use: CSSExtract.extract({
               use: [
                 {
