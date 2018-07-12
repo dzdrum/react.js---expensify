@@ -4,6 +4,7 @@ const express = require('express');
 //create an express application
 const app = express();
 const publicPath = path.join(__dirname, '..', 'public');
+const port = process.env.PORT || 3000;
 
 //tell the application to use the public directory to serve up all static assets
 app.use(express.static(publicPath));
@@ -15,6 +16,6 @@ app.get('*', (req, res) => {
 });
 
 //start up on port 3000 for the development server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('server is up!');
 });
