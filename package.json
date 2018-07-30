@@ -1,6 +1,9 @@
 {
   "name": "Expensify",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.1.0"
+  },
   "main": "index.js",
   "author": "Dylan Drum",
   "license": "MIT",
