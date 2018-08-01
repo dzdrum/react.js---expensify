@@ -30,6 +30,7 @@ export { firebase, database as default };
 //   console.log(snapshot.key, snapshot.val());
 // });
 
+//******************************************************************************
 // // database.ref('expenses')
 // //   .once('value')
 // //   .then((snapshot) => {
